@@ -19,6 +19,7 @@
         <hutool.ver>5.3.7</hutool.ver>
         <mybatis.ver>3.4.1</mybatis.ver>
         <knife4j.ver>2.0.4</knife4j.ver>
+        <jgit.ver>5.12.0.202106070339-r</jgit.ver>
     </properties>
 
     <dependencyManagement>
@@ -70,6 +71,13 @@
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis.ver}</version>
             </dependency>
+
+            <!--git操作-->
+            <dependency>
+                <groupId>org.eclipse.jgit</groupId>
+                <artifactId>org.eclipse.jgit</artifactId>
+                <version>${jgit.ver}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -78,5 +86,7 @@
         <module>hewo-app</module>
         <module>hewo-ucenter</module>
         <module>hewo-core</module>
+        <module>hewo-bed</module>
+        <module>hewo-file</module>
     </modules>
 </project>

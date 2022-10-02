@@ -8,25 +8,15 @@
         <version>1.0.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <version>1.0.0.0</version>
-    <packaging>jar</packaging>
 
-    <artifactId>hewo-app</artifactId>
+    <artifactId>hewo-file</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.0.0</version>
 
     <dependencies>
         <dependency>
             <groupId>org.hewo</groupId>
             <artifactId>hewo-infrastructure</artifactId>
-            <version>1.0.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hewo</groupId>
-            <artifactId>hewo-ucenter</artifactId>
-            <version>1.0.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hewo</groupId>
-            <artifactId>hewo-file</artifactId>
             <version>1.0.0.0</version>
         </dependency>
     </dependencies>

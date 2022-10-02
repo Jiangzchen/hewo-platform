@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import springfox.documentation.spring.web.plugins.Docket;
 
 @Configuration
-public class SwaggerConfigurer {
+public class SwaggerUcenterConfigurer {
 
     @Bean
     public Docket ucenterStandardApi() {
