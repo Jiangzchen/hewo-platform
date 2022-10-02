@@ -1,0 +1,26 @@
+server:
+  port: 9999
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://114.132.41.62:20001/rbp_9173?useUnicode=true&characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&allowMultiQueries=true&allowMultiQueries=true&serverTimezone=GMT%2B8
+    username: root
+    password: root
+  redis:
+    host: 114.132.225.138
+    port: 6379
+    password: 123456
+    database: 15 # 指定redis的分库（共16个0到15）
+
+mybatis-plus:
+  # 搜索指定包别名
+  typeAliasesPackage: org.hewo
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapperLocations: classpath*:mybatis/*Mapper.xml
+  # 原生配置
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+    #打印sql
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
